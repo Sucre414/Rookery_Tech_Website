@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rookery Technologies | Autonomous Solar, Storage &amp; Predictive Architecture</title>
+  <meta name="description" content="Self-sustaining modular residences engineered for extreme tropical and subtropical grids across Nigeria and North America." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="#" class="brand">
+        <span class="brand-mark">R</span>
+        <span class="brand-name">ROOKERY TECHNOLOGIES</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="#trifecta">Architecture</a>
+        <a href="#corridors">Deployment Corridors</a>
+        <a href="#simulator">Live Simulator</a>
+        <a href="#residences">Residences</a>
+        <a href="#diaspora">Diaspora Assurance</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="btn btn-primary" data-open-modal>Schedule Consultation</button>
+        <button type="button" class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer" hidden>
+      <a href="#trifecta" class="mobile-nav-link">Architecture</a>
+      <a href="#corridors" class="mobile-nav-link">Deployment Corridors</a>
+      <a href="#simulator" class="mobile-nav-link">Live Simulator</a>
+      <a href="#residences" class="mobile-nav-link">Residences</a>
+      <a href="#diaspora" class="mobile-nav-link">Diaspora Assurance</a>
+      <a href="https://www.linkedin.com/company/rookerytechnologies/home/" target="_blank" rel="noopener noreferrer" class="mobile-nav-link">LinkedIn</a>
+      <button type="button" class="btn btn-primary btn-full" data-open-modal>Schedule Consultation</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">50HZ / 60HZ TROPICAL &amp; SUBTROPICAL MICROGRID ARCHITECTURE</div>
+          <h1>Self Sustaining Architecture. Uninterrupted Power.</h1>
+          <p class="hero-sub">
+            Precision modular homes engineered for high heat, intense storm cycles, and fragile utility grids. Rookery unites solar generation, chemistry agnostic battery reserves, automated backup generation, and local first predictive load orchestration.
+          </p>
+          <div class="hero-cta-group">
+            <button type="button" class="btn btn-primary btn-lg" data-open-modal>Request Engineering Brief</button>
+            <a href="#simulator" class="btn btn-outline btn-lg">Test Power Algorithm</a>
+          </div>
+          <div class="hero-metrics" id="hero-metrics-mount"></div>
+        </div>
+
+        <!-- Architectural Blueprint Diagram -->
+        <div class="blueprint-card">
+          <div class="blueprint-header">
+            <span class="mono-tag">SYSTEM SCHEMATIC // REV 4.2</span>
+            <span class="status-pill"><span class="pulse-dot"></span> LOCAL CORE ACTIVE</span>
+          </div>
+          <svg viewBox="0 0 520 360" class="blueprint-svg" role="img" aria-label="Rookery Tri Source Energy and Modular House Schematic">
+            <defs>
+              <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(148,163,184,0.12)" stroke-width="1"/>
+              </pattern>
+            </defs>
+            <rect width="520" height="360" fill="url(#grid)" rx="12" />
+
+            <!-- Solar Roof Array -->
+            <polygon points="90,120 260,55 430,120" fill="#1e293b" stroke="#f59e0b" stroke-width="2.5"/>
+            <line x1="150" y1="97" x2="370" y2="97" stroke="#f59e0b" stroke-width="1" stroke-dasharray="4 4"/>
+            <text x="260" y="42" text-anchor="middle" fill="#fbbf24" font-size="11" font-family="monospace">MONOCRYSTALLINE SOLAR ROOF ARRAY</text>
+
+            <!-- House Envelope -->
+            <rect x="110" y="120" width="300" height="170" fill="#0f172a" stroke="#475569" stroke-width="2"/>
+
+            <!-- Rookery Core Hub -->
+            <rect x="205" y="150" width="110" height="58" rx="6" fill="#064e3b" stroke="#10b981" stroke-width="2"/>
+            <text x="260" y="175" text-anchor="middle" fill="#ecfdf5" font-size="11" font-weight="bold" font-family="monospace">ROOKERY CORE</text>
+            <text x="260" y="192" text-anchor="middle" fill="#6ee7b7" font-size="9" font-family="monospace">1W CIRCUIT SENSING</text>
+
+            <!-- Battery Bank -->
+            <rect x="125" y="225" width="95" height="50" rx="5" fill="#1e293b" stroke="#38bdf8" stroke-width="1.8"/>
+            <text x="172" y="247" text-anchor="middle" fill="#e0f2fe" font-size="10" font-weight="bold" font-family="monospace">STORAGE BANK</text>
+            <text x="172" y="262" text-anchor="middle" fill="#7dd3fc" font-size="8.5" font-family="monospace">HIGH ENDURANCE</text>
+
+            <!-- Acoustic Backup Generator -->
+            <rect x="300" y="225" width="95" height="50" rx="5" fill="#1e293b" stroke="#f97316" stroke-width="1.8"/>
+            <text x="347" y="247" text-anchor="middle" fill="#ffedd5" font-size="10" font-weight="bold" font-family="monospace">AUTO GENSET</text>
+            <text x="347" y="262" text-anchor="middle" fill="#fdba74" font-size="8.5" font-family="monospace">FAILOVER ONLY</text>
+
+            <!-- Flow Lines -->
+            <line x1="260" y1="120" x2="260" y2="150" stroke="#fbbf24" stroke-width="2"/>
+            <line x1="225" y1="208" x2="172" y2="225" stroke="#38bdf8" stroke-width="2"/>
+            <line x1="295" y1="208" x2="347" y2="225" stroke="#f97316" stroke-width="2"/>
+
+            <!-- Ground Line -->
+            <line x1="50" y1="290" x2="470" y2="290" stroke="#64748b" stroke-width="2"/>
+            <text x="260" y="318" text-anchor="middle" fill="#94a3b8" font-size="10" font-family="monospace">ZERO CLOUD DEPENDENCY // OFFLINE MESH READY</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3-Pillar Interactive Trifecta -->
+    <section id="trifecta" class="section section-light">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">INTEGRATED SYSTEM ARCHITECTURE</div>
+          <h2>Three Engineering Disciplines. One Unified Home.</h2>
+          <p>Select each pillar below to inspect how hardware, envelope engineering, and local circuit intelligence prevent battery depletion.</p>
+        </div>
+
+        <div class="pillar-tabs" id="pillar-tabs-mount" role="tablist"></div>
+        <div class="pillar-stage" id="pillar-stage-mount" role="tabpanel"></div>
+      </div>
+    </section>
+
+    <!-- Dual Deployment Corridors -->
+    <section id="corridors" class="section section-dark">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">GLOBAL CLIMATE SPECIALIZATION</div>
+          <h2>Engineered for the World's Most Demanding Grids</h2>
+          <p>A residence built to run autonomously through Lagos storm cycles and peak heat is built to thrive across North America's hurricane and Sunbelt corridors.</p>
+        </div>
+
+        <div class="corridors-grid" id="corridors-mount"></div>
+      </div>
+    </section>
+
+    <!-- Live Energy Flow & Algorithm Simulator -->
+    <section id="simulator" class="section section-light">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">INTERACTIVE TELEMETRY MODEL</div>
+          <h2>See How Predictive Orchestration Extends Battery Runtime</h2>
+          <p>Switch weather and household load scenarios, then toggle Rookery's local algorithm between Active and Bypassed states.</p>
+        </div>
+
+        <div class="simulator-shell">
+          <div class="sim-controls">
+            <div class="sim-scenarios" id="sim-scenarios-mount"></div>
+            <div class="sim-toggle-box">
+              <span class="sim-toggle-label">Rookery Load Algorithm:</span>
+              <button type="button" id="algo-toggle-btn" class="algo-btn active" aria-pressed="true">ACTIVE (PROTECTING BATTERY)</button>
+            </div>
+          </div>
+
+          <div class="sim-dashboard" id="sim-dashboard-mount"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Residence Tiers -->
+    <section id="residences" class="section section-dark">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">MODULAR CONFIGURATIONS</div>
+          <h2>Turnkey Architectural Models</h2>
+          <p>Pre engineered structural kits shipped with complete solar, storage, backup generation, and smart circuit panels.</p>
+        </div>
+
+        <div class="tiers-grid" id="tiers-mount"></div>
+      </div>
+    </section>
+
+    <!-- Diaspora Assurance -->
+    <section id="diaspora" class="section section-light">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">TRANSPARENT REMOTE DELIVERY</div>
+          <h2>Built for Global Buyers &amp; Diaspora Homeowners</h2>
+          <p>Eliminate remote construction risk with milestone escrow, factory precision components, and live site telemetry.</p>
+        </div>
+
+        <div class="assurance-grid" id="assurance-mount"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="brand">
+          <span class="brand-mark">R</span>
+          <span class="brand-name">ROOKERY TECHNOLOGIES</span>
+        </div>
+        <p class="footer-note">Self-sustaining modular architecture and local-first microgrid orchestration for West Africa and North America.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#trifecta">Architecture</a>
+        <a href="#corridors">Corridors</a>
+        <a href="#residences">Models</a>
+        <a href="https://www.linkedin.com/company/rookerytechnologies/home/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <button type="button" class="footer-cta-link" data-open-modal>Book Consultation</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Consultation Modal -->
+  <div class="modal-backdrop" id="consultation-modal" hidden role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <button type="button" class="modal-close" id="modal-close-btn" aria-label="Close Modal">&times;</button>
+
+      <div id="modal-form-view">
+        <div class="eyebrow">PROJECT INTAKE // ENGINEERING CONSULTATION</div>
+        <h3 id="modal-title">Reserve Your Build Assessment</h3>
+        <p class="modal-sub">Share your target build corridor and residence model. An engineering lead will respond with site sizing and feasibility details.</p>
+
+        <form id="consultation-form" action="https://formspree.io/f/xgakzqnb" method="POST">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="full_name">Full Name *</label>
+              <input type="text" id="full_name" name="full_name" required placeholder="e.g., Tunde Adeyemi" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required placeholder="you@example.com" />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone / WhatsApp</label>
+              <input type="tel" id="phone" name="phone" placeholder="+1 or +234..." />
+            </div>
+            <div class="form-group">
+              <label for="current_location">Current Country / City</label>
+              <input type="text" id="current_location" name="current_location" placeholder="e.g., London, UK or Houston, TX" />
+            </div>
+            <div class="form-group">
+              <label for="location">Target Build Location *</label>
+              <select id="location" name="location" required></select>
+            </div>
+            <div class="form-group">
+              <label for="residence_tier">Residence Model *</label>
+              <select id="residence_tier" name="residence_tier" required></select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="build_timeline">Target Timeline</label>
+            <select id="build_timeline" name="build_timeline">
+              <option value="Immediate (0-3 Months)">Immediate (0–3 Months)</option>
+              <option value="Near Term (3-6 Months)">Near Term (3–6 Months)</option>
+              <option value="Planning Phase (6-12 Months)">Planning Phase (6–12 Months)</option>
+              <option value="Land Acquisition Stage">Land Acquisition Stage</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="notes">Site Details or Power Requirements</label>
+            <textarea id="notes" name="notes" rows="3" placeholder="Tell us about your plot status, cooling needs, or commercial loads..."></textarea>
+          </div>
+
+          <p class="form-error" id="form-error-msg" hidden>Submission failed. Please check your connection and try again.</p>
+          <button type="submit" class="btn btn-primary btn-full btn-lg" id="submit-btn">Submit Consultation Request</button>
+        </form>
+      </div>
+
+      <div id="modal-success-view" class="modal-success" hidden>
+        <div class="success-badge">&#10003;</div>
+        <h3>Consultation Request Received</h3>
+        <p>Thank you. Your project parameters have been routed to the Rookery Technologies engineering team. We will contact you shortly with regional sizing specifications.</p>
+        <button type="button" class="btn btn-outline" id="modal-done-btn">Return to Site</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
